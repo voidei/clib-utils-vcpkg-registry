@@ -4,7 +4,7 @@
 
 ## How to use&colon;
 
-Add the following to your vcpkg-configuration.json file:
+### Add the following to your vcpkg-configuration.json file:
 
 ```json
 {
@@ -22,4 +22,14 @@ Add the following to your vcpkg-configuration.json file:
 }
 ```
 
-Note: Replace the `baseline` section with the latest commit hash.
+#### Note: Replace the `baseline` section with the latest commit hash.
+
+### Then add the following to your PCH.h requiring one of the headers&colon;
+
+```h
+#include <CLibUtil/config.hpp>
+#include <CLibUtil/numeric.hpp>
+#include <CLibUtil/rng.hpp>
+#include <CLibUtil/string.hpp>
+#include <CLibUtil/detail/XoshiroCpp.hpp>
+```
