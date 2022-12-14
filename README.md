@@ -4,7 +4,7 @@
 
 ## How to use&colon;
 
-### Add the following to your vcpkg-configuration.json file:
+### Add the following to your vcpkg-configuration.json file&colon;
 
 ```json
 {
@@ -22,7 +22,7 @@
 }
 ```
 
-#### Note: Replace the `baseline` section with the latest commit hash.
+#### Note: Replace the `baseline` section with the latest commit hash&period;
 
 ### Then add the following to your CMakeLists.txt&colon;
 
