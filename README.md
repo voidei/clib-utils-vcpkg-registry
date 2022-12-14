@@ -8,7 +8,7 @@ Add the following to your vcpkg-configuration.json file:
 
 ```json
 {
-    "$schema": "",
+    "$schema": "https://raw.githubusercontent.com/microsoft/vcpkg-tool/main/docs/vcpkg-configuration.schema.json",
     "registries": [
         {
             "kind": "git",
