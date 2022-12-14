@@ -13,7 +13,7 @@ Add the following to your vcpkg-configuration.json file:
         {
             "kind": "git",
             "repository": "https://github.com/voidei/clib-utils-vcpkg-repository",
-            "baseline": "356f174cd0ac64877cd7d0cfc3488b1eed6678c2",
+            "baseline": "d2966accb6985192033f51c3ebdc25678b45a1b2",
             "packages": [
                 "clib-util"
             ]
