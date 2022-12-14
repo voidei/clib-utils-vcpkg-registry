@@ -13,7 +13,7 @@
         {
             "kind": "git",
             "repository": "https://github.com/voidei/clib-utils-vcpkg-repository",
-            "baseline": "d2966accb6985192033f51c3ebdc25678b45a1b2",
+            "baseline": "2e26a700bc1eadd3628b876c2d394536a830330a",
             "packages": [
                 "clib-util"
             ]
