@@ -1,6 +1,6 @@
-# clib-utils-vcpkg-registry
+# CLib Util - VCPKG Registry
 
-VCPKG Registry for CommonLibSSE Utils
+[VCPKG](https://vcpkg.io) Registry for [CLib Util](https://github.com/powerof3/CLibUtil), by [powerof3](https://github.com/powerof3).
 
 ## How to use&colon;
 
