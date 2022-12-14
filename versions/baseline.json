@@ -1,5 +1,8 @@
 {
 	"default": {
-		"clib-util": { "baseline": "1.0.0", "port-version": 1 }
+		"clib-util": {
+			"baseline": "1.0.0",
+			"port-version": 2
+		}
 	}
 }
