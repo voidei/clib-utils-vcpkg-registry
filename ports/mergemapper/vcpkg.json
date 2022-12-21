@@ -1,0 +1,7 @@
+{
+	"$schema": "https://raw.githubusercontent.com/microsoft/vcpkg-tool/master/docs/vcpkg.schema.json",
+	"version-string": "1.0.0",
+	"port-version": 1,
+	"description": "An SKSE plugin to dynamically map zmerges.",
+	"homepage": "https://github.com/alandtse/MergeMapper"
+}
