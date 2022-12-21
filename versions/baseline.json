@@ -3,6 +3,14 @@
 		"clib-util": {
 			"baseline": "1.0.0",
 			"port-version": 5
+		},
+		"mergemapper": {
+			"baseline": "1.0.0",
+			"port-version": 1
+		},
+		"simpleini-po3": {
+			"baseline": "2022-11-17",
+			"port-version": 2
 		}
 	}
 }
