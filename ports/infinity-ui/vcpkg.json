@@ -2,7 +2,7 @@
 	"$schema": "https://raw.githubusercontent.com/microsoft/vcpkg-tool/main/docs/vcpkg.schema.json",
 	"name": "infinity-ui",
 	"version": "1.1.0",
-	"port-version": 1,
+	"port-version": 2,
 	"description": "This SKSE plugin aims to put an end to incompatibilities between UI mods with an easy-to-use framework, allowing customization per UI element. ",
 	"homepage": "https://github.com/alexsylex/InfinityUI"
 }
