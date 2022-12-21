@@ -39,14 +39,14 @@
 TODO: Fix up the below -
 
 ### Then add the following to your CMakeLists.txt&colon;
-<!--
+
 ```cmake
 find_path(CLIB_UTIL_INCLUDE_DIRS "ClibUtil/detail/SimpleIni.h")
 target_include_directories(main PRIVATE ${CLIB_UTIL_INCLUDE_DIRS})
 ```
--->
+
 ### After than, you can include any of the files by doing the following&colon;
-<!--
+
 ```h
 #include <ClibUtil/detail/SimpleIni.h>
 #include <ClibUtil/detail/XoshiroCpp.hpp>
@@ -57,4 +57,3 @@ target_include_directories(main PRIVATE ${CLIB_UTIL_INCLUDE_DIRS})
 #include <ClibUtil/string.hpp>
 #include <ClibUtil/utils.hpp>
 ```
--->
