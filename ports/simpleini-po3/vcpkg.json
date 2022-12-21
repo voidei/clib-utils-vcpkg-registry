@@ -1,0 +1,8 @@
+{
+	"$schema": "https://raw.githubusercontent.com/microsoft/vcpkg-tool/master/docs/vcpkg.schema.json",
+	"name": "simpleini-po3",
+	"version-date": "2022-11-17",
+	"port-version": 2,
+	"description": "Cross-platform C++ library providing a simple API to read and write INI-style configuration files. Fork to allow empty values",
+	"homepage": "https://github.com/powerof3/simpleini"
+}
