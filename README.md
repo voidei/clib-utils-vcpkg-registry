@@ -27,7 +27,7 @@
                 "clib-util",
                 "infinity-ui",
                 "mergemapper",
-                "simpleini-po3"
+                "simpleini-po3
             ]
         }
     ]
@@ -36,24 +36,38 @@
 
 #### Note: Replace the `baseline` section with the latest commit hash&period;
 
-TODO: Fix up the below -
-
 ### Then add the following to your CMakeLists.txt&colon;
 
+#### SimpleINI - PO3 Wrapper
+
 ```cmake
-find_path(CLIB_UTIL_INCLUDE_DIRS "ClibUtil/detail/SimpleIni.h")
+find_path(SIMPLEINI_INCLUDE_DIRS "ConvertUTF.c")
+target_include_directories(main PRIVATE ${SIMPLE_INI_INCLUDE_DIRS})
+```
+
+#### Clib Util&colon;
+
+```cmake
+find_path(CLIB_UTIL_INCLUDE_DIRS "ClibUtil/utils.hpp")
 target_include_directories(main PRIVATE ${CLIB_UTIL_INCLUDE_DIRS})
+```
+
+#### MergeMapper&colon;
+
+```cmake
+find_path(MERGEMAPPER_INCLUDE_DIRS "MergeMapperPluginAPI.h")
+add_library(${PROJECT_NAME} SHARED ${MERGEMAPPER_INCLUDE_DIRS}/MergeMapperPluginAPI.cpp)
+target_include_directories(main PRIVATE ${MERGEMAPPER_INCLUDE_DIRS})
 ```
 
 ### After than, you can include any of the files by doing the following&colon;
 
 ```h
-#include <ClibUtil/detail/SimpleIni.h>
-#include <ClibUtil/detail/XoshiroCpp.hpp>
+// ClibUtil
 #include <ClibUtil/distribution.hpp>
-#include <ClibUtil/numeric.hpp>
 #include <ClibUtil/rng.hpp>
-#include <ClibUtil/simpleINI.hpp>
 #include <ClibUtil/string.hpp>
-#include <ClibUtil/utils.hpp>
+
+// MergeMapper
+#include <MergeMapperPluginAPI.h>
 ```
