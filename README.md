@@ -38,7 +38,6 @@
 
 ### Then add the following to your CMakeLists.txt&colon;
 
-
 #### AutoTOML
 
 ```cmake
@@ -75,8 +74,7 @@ find_path(SIMPLEINI_INCLUDE_DIRS "ConvertUTF.c")
 target_include_directories(main PRIVATE ${SIMPLE_INI_INCLUDE_DIRS})
 ```
 
-
-### After than, you can include any of the files by doing the following&colon;
+### After then, you can include any of the files by doing the following&colon;
 
 ```h
 // AutoTOML
@@ -94,5 +92,5 @@ target_include_directories(main PRIVATE ${SIMPLE_INI_INCLUDE_DIRS})
 #include <MergeMapperPluginAPI.h>
 
 // SimpleINI - PO3 Wrapper
-#include <SimpleI
+#include <SimpleIni.h>
 ```
