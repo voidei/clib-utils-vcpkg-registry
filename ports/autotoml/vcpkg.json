@@ -2,10 +2,10 @@
 	"$schema": "https://raw.githubusercontent.com/microsoft/vcpkg-tool/master/docs/vcpkg.schema.json",
 	"name": "autotoml",
 	"version-string": "1",
-	"homepage": "https://github.com/Ryan-rsm-McKenzie/AutoTOML",
+	"homepage": "https://github.com/voidei/AutoTOML",
 	"license": "MIT",
 	"dependencies": [
 		"tomlplusplus"
 	],
-	"port-version": 0
+	"port-version": 2
 }
