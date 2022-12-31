@@ -27,7 +27,7 @@
                 "clib-util",
                 "infinity-ui",
                 "mergemapper",
-                "simpleini-po3
+                "simpleini-po3"
             ]
         }
     ]
@@ -60,6 +60,20 @@ add_library(${PROJECT_NAME} SHARED ${MERGEMAPPER_INCLUDE_DIRS}/MergeMapperPlugin
 target_include_directories(main PRIVATE ${MERGEMAPPER_INCLUDE_DIRS})
 ```
 
+#### Infinity UI&oclon;
+
+```cmake
+find_path(INFINITY_UI_INCLUDE_DIRS "API.h")
+target_include_dirs(main PRIVATE ${INFINITY_UI_INCLUDE_DIRS})
+```
+
+#### AutoTOML
+
+```cmake
+find_package(AutoTOML CONFIG REQUIRED)
+target_link_libraries(main PRIVATE AutoTOML::AutoTOML::)
+```
+
 ### After than, you can include any of the files by doing the following&colon;
 
 ```h
@@ -70,4 +84,10 @@ target_include_directories(main PRIVATE ${MERGEMAPPER_INCLUDE_DIRS})
 
 // MergeMapper
 #include <MergeMapperPluginAPI.h>
+
+// Infinity UI
+#include <API.h>
+
+// AutoTOML
+#include <
 ```
