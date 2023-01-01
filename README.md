@@ -38,28 +38,28 @@
 
 ### Then add the following to your CMakeLists.txt&colon;
 
-#### AutoTOML
+#### [AutoTOML](https://github.com/shad0wshayd3/AutoTOML/)
 
 ```cmake
 find_package(AutoTOML CONFIG REQUIRED)
 target_link_libraries(main PRIVATE AutoTOML::AutoTOML::)
 ```
 
-#### Clib Util&colon;
+#### [Clib Util&colon;](https://github.com/powerof3/CLibUtil)
 
 ```cmake
 find_path(CLIB_UTIL_INCLUDE_DIRS "ClibUtil/utils.hpp")
 target_include_directories(main PRIVATE ${CLIB_UTIL_INCLUDE_DIRS})
 ```
 
-#### Infinity UI&colon;
+#### [Infinity UI&colon;](https://github.com/alexsylex/InfinityUI)
 
 ```cmake
 find_path(INFINITY_UI_INCLUDE_DIRS "API.h")
 target_include_dirs(main PRIVATE ${INFINITY_UI_INCLUDE_DIRS})
 ```
 
-#### MergeMapper&colon;
+#### [MergeMapper&colon;](https://github.com/alandtse/MergeMapper)
 
 ```cmake
 find_path(MERGEMAPPER_INCLUDE_DIRS "MergeMapperPluginAPI.h")
@@ -67,11 +67,17 @@ add_library(${PROJECT_NAME} SHARED ${MERGEMAPPER_INCLUDE_DIRS}/MergeMapperPlugin
 target_include_directories(main PRIVATE ${MERGEMAPPER_INCLUDE_DIRS})
 ```
 
-#### SimpleINI - PO3 Wrapper
+#### [SimpleINI - PO3 Wrapper&colon;](https://github.com/powerof3/simpleini)
 
 ```cmake
 find_path(SIMPLEINI_INCLUDE_DIRS "ConvertUTF.c")
 target_include_directories(main PRIVATE ${SIMPLE_INI_INCLUDE_DIRS})
+```
+
+#### [MCM Helper&colon;](https://github.com/Exit-9B/MCM-Helper)
+
+```cmake
+todo
 ```
 
 ### After then, you can include any of the files by doing the following&colon;

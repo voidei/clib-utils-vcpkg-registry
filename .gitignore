@@ -1,5 +1,9 @@
-/build*
 CMakeUserPresets.json
-/out*
-/.vs*
-/.idea
+build/
+out/
+.vs/
+.idea/
+
+.vscode/*
+!.vscode/settings.json
+!.vscode/schemas

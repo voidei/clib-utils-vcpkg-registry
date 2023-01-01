@@ -1,0 +1,40 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema",
+	"$id": "https://github.com/voidei/schemastore/main/schemas/vcpkg/baseline.schema.json",
+	"title": "vcpkg baseline.json schema.",
+	"description": "Schema definition for validating vcpkg baseline.json files.",
+	"type": "object",
+	"definitions": {
+		"port-version": {
+			"description": "A non-negative integer indicating the port revision. If this field doesn't exist, it's assumed to be `0`.",
+			"type": "integer",
+			"minimum": 0,
+			"default": 0
+		},
+		"baseline": {
+			"description": "Port version baseline. (e.g. version semver, version string, etc.)",
+			"pattern": "(^\\d+(\\.\\d+)*(?:-((?:0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*)(?:\\.(?:0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*))*))?(?:\\+([0-9a-zA-Z-]+(?:\\.[0-9a-zA-Z-]+)*))?$)|(^\\d{4}-\\d{2}-\\d{2}(\\.\\d+)*$)|(^(0|[1-9]\\d*)\\.(0|[1-9]\\d*)\\.(0|[1-9]\\d*)(?:-((?:0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*)(?:\\.(?:0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*))*))?(?:\\+([0-9a-zA-Z-]+(?:\\.[0-9a-zA-Z-]+)*))?$)"
+		}
+	},
+	"properties": {
+		"default": {
+			"description": "Default registry ports.",
+			"type": "object",
+			"patternProperties": {
+				"^[a-z0-9]+(-[a-z0-9]+)*(\\.[a-z0-9]+(-[a-z0-9]+)*)*$": {
+					"type": "object",
+					"description": "Package name.",
+					"properties": {
+						"baseline": {
+							"$ref": "#/definitions/baseline"
+						},
+						"port-version": {
+							"$ref": "#/definitions/port-version"
+						}
+					}
+				}
+			},
+			"additionalProperties": false
+		}
+	}
+}
