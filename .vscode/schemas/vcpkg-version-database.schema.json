@@ -1,6 +1,6 @@
 {
 	"$schema": "http://json-schema.org/draft-07/schema",
-	"$id": "https://github.com/voidei/schemastore/main/schemas/vcpkg/vcpkg-version-database.schema.json",
+	"$id": "https://raw.githubusercontent.com/voidei/vcpkg-registry/main/.vscode/schemas/vcpkg-version-database.schema.json",
 	"title": "vcpkg versions database schema.",
 	"description": "Schema definition for validating vcpkg versions database files.",
 	"type": "object",
