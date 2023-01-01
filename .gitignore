@@ -1,9 +1,18 @@
 CMakeUserPresets.json
+CMakePresets.json
+CMakeLists.txt
+vcpkg.json
+vcpkg-configuration.json
+
 build/
 out/
 .vs/
 .idea/
+vcpkg_installed/
+
+src/
 
 .vscode/*
 !.vscode/settings.json
+!.vscode/extensions.json
 !.vscode/schemas
