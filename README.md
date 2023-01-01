@@ -100,3 +100,15 @@ todo
 // SimpleINI - PO3 Wrapper
 #include <SimpleIni.h>
 ```
+
+## Other VCPKG Registries&colon;
+
+### [Color-Glass Studios](https://gitlab.com/colorglass/vcpkg-colorglass)
+
+`A Vcpkg repository for Color-Glass Studios development.`
+
+This registry contains ports for **CommonLibSSE**, as well as several other packages used for modding Skyrim SE, or Fallout 4.
+
+### [Mrowr Purr's vcpkg repository](https://github.com/mrowrpurr/vcpkg-repo)
+
+This registry, maintained by [Mrowr Purr](https://github.com/mrowrpurr), is currently relatively small. But has some useful tools contained in it.
