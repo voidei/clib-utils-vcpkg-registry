@@ -21,7 +21,7 @@
         {
             "kind": "git",
             "repository": "https://github.com/voidei/clib-utils-vcpkg-repository",
-            "baseline": "72d74a9896a17d0eaae2f273bddeadc2fafabed8",
+            "baseline": "20024b93cc048815af81db9608df020d25850f2d",
             "packages": [
                 "autotoml",
                 "clib-util",
@@ -74,11 +74,13 @@ find_path(SIMPLEINI_INCLUDE_DIRS "ConvertUTF.c")
 target_include_directories(main PRIVATE ${SIMPLE_INI_INCLUDE_DIRS})
 ```
 
+<!--
 #### [MCM Helper&colon;](https://github.com/Exit-9B/MCM-Helper)
 
 ```cmake
 todo
 ```
+-->
 
 ### After then, you can include any of the files by doing the following&colon;
 
@@ -99,6 +101,9 @@ todo
 
 // SimpleINI - PO3 Wrapper
 #include <SimpleIni.h>
+
+// MCM Helper
+#include <todo>
 ```
 
 ## Other VCPKG Registries&colon;
@@ -109,6 +114,10 @@ todo
 
 This registry contains ports for **CommonLibSSE**, as well as several other packages used for modding Skyrim SE, or Fallout 4.
 
-### [Mrowr Purr's vcpkg repository](https://github.com/mrowrpurr/vcpkg-repo)
+### [Mrowr Purr's VCPKG repository](https://github.com/mrowrpurr/vcpkg-repo)
 
-This registry, maintained by [Mrowr Purr](https://github.com/mrowrpurr), is currently relatively small. But has some useful tools contained in it.
+This registry, maintained by [Mrowr Purr](https://github.com/mrowrpurr), is currently relatively small, but has some useful tools contained in it.
+
+### [Skyrim Scripting VCPKG Registry](https://github.com/SkyrimScripting/vcpkg)
+
+This registry, maintained by several members, is another relatively small one, but still contains some useful tools.
